@@ -14,14 +14,14 @@ import 'package:terraform/presentation/add_comments_screen/add_comments_screen.d
 import 'package:terraform/presentation/add_comments_screen/binding/add_comments_binding.dart';
 import 'package:terraform/presentation/list_of_comments_screen/list_of_comments_screen.dart';
 import 'package:terraform/presentation/list_of_comments_screen/binding/list_of_comments_binding.dart';
-import 'package:terraform/presentation/text_screen_one_screen/text_screen_one_screen.dart';
-import 'package:terraform/presentation/text_screen_one_screen/binding/text_screen_one_binding.dart';
-import 'package:terraform/presentation/text_screen_two_screen/text_screen_two_screen.dart';
-import 'package:terraform/presentation/text_screen_two_screen/binding/text_screen_two_binding.dart';
-import 'package:terraform/presentation/text_screen_three_screen/text_screen_three_screen.dart';
-import 'package:terraform/presentation/text_screen_three_screen/binding/text_screen_three_binding.dart';
-import 'package:terraform/presentation/text_screen_four_screen/text_screen_four_screen.dart';
-import 'package:terraform/presentation/text_screen_four_screen/binding/text_screen_four_binding.dart';
+import 'package:terraform/presentation/google_screen/google_screen.dart';
+import 'package:terraform/presentation/google_screen/binding/google_binding.dart';
+import 'package:terraform/presentation/docker_screen/docker_screen.dart';
+import 'package:terraform/presentation/docker_screen/binding/docker_binding.dart';
+import 'package:terraform/presentation/aws_screen/aws_screen.dart';
+import 'package:terraform/presentation/aws_screen/binding/aws_binding.dart';
+import 'package:terraform/presentation/azure_screen/azure_screen.dart';
+import 'package:terraform/presentation/azure_screen/binding/azure_binding.dart';
 import 'package:terraform/presentation/settings_screen/settings_screen.dart';
 import 'package:terraform/presentation/settings_screen/binding/settings_binding.dart';
 import 'package:terraform/presentation/list_of_runs_screen/list_of_runs_screen.dart';
@@ -144,30 +144,30 @@ class AppRoutes {
     ),
     GetPage(
       name: textScreenOneScreen,
-      page: () => TextScreenOneScreen(),
+      page: () => AWSScreen(),
       bindings: [
-        TextScreenOneBinding(),
+        AWSBinding(),
       ],
     ),
     GetPage(
       name: textScreenTwoScreen,
-      page: () => TextScreenTwoScreen(),
+      page: () => AzureScreen(),
       bindings: [
-        TextScreenTwoBinding(),
+        AzureBinding(),
       ],
     ),
     GetPage(
       name: textScreenThreeScreen,
-      page: () => TextScreenThreeScreen(),
+      page: () => DockerScreen(),
       bindings: [
-        TextScreenThreeBinding(),
+        DockerBinding(),
       ],
     ),
     GetPage(
       name: textScreenFourScreen,
-      page: () => TextScreenFourScreen(),
+      page: () => GoogleScreen(),
       bindings: [
-        TextScreenFourBinding(),
+        GoogleBinding(),
       ],
     ),
     GetPage(
