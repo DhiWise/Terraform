@@ -44,7 +44,7 @@ Using a mobile app, configure Terraform. you can create an organization, create 
 3. file_picker
 
 ### Screenshots
-![alt text](https://github.com/kajal1598/image_01/blob/master/Frame%203.png?raw=true)
+![alt text](https://global-uploads.webflow.com/618fa90c201104b94458e1fb/633d12f60b7be5f1044c53f5_HashiCorps%20(1).png)
 
 
 ### Table of Contents
